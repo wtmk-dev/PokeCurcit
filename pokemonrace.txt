@@ -1,0 +1,90 @@
+Poke Circuit
+This is an open source Reality Game.
+Developed by Brandon Khan of After Earth Arcade.
+
+
+PC is a 2 or more Player Reality game where players use a pokemon game to race
+
+Each player will use the same version of pokemon. Note that this is devised for games that extend from the RGB line of pokemon. 
+
+Poke circuit is a reality game framework that consists of cups. feel free to implement and come up with your own!
+
+a cup defines a finish line, rules, and fate table.
+fate table implants strikes that force actions after 3 are earned.
+If a player reaches 3 strikes they must complete that action before doing anything else. 
+If they are in a battle and the strike can be performed in battle they must.
+fate table implements tokens that restrict actions.                                                                                                   
+if a token is active that action can only be taken if a token is used.
+fate table defines the number of starting tokens as well as the faces of the fate die.
+Each face represents a fate rule. do the thing the fate rule says before continuing the race. 
+If you are currently in a battle the battle must be finished before you resolve the fate, 
+If the finish line is reached before the player can resolve a fate. then null any effects of that fate.
+This also applies to strikes or any other mechanics that would restrict the player from completing a battle.
+
+Cups -
+:Basic
+Finish line - The first player to enter into the hall of fame
+Rules - Themed Nickname, Rivals, Fated Rest, Fated Capture, Reaper, Progression
+Fate Table - Basic
+
+Rules -
+:Themed Nickname -players must nickname their pokemon. 
+	The pokemon must have nicknames that carry some unifying theme.
+	The theme is announced before the race starts.
+:Rivals- players must name the river after one of the other players in the race.
+	when you defeat your rival during the game that player must proceed to the last pokemon center you visited.
+	you must also proceed to the last pokemon center you viste.
+	When both players arrive they must battle.
+	Other cup rules do not apply when battling.
+	The winner receives a rivell token. rivle tokens act as any token.
+:Fated Rest - when you use a pokecenter roll the fate die
+:Fated Captuer - when you use a pokecenter roll the fate die
+:Reaper- when you pokemon faints you have to release it. revives are not usable with this rule active.
+:Progression - when you beat a gym roll a d6 gain implements tokens of rolled number. allocate how you like.
+
+
+Strikes -
+:Release - Release a pkm of your choice.
+:Freeze - Put the controller down for 1 min. You can't play the game at all until the time limit is over.
+:Push-Up - Do 5 push ups before you keep playing
+:Reset - power off your console then power it back on
+
+Tokens - 
+:PokeCenter - Restricts use of pokemon centers
+:Capture - Restricts use of capturing pokemon
+:Phoenix Down - If you must release a pokemon you may exchange this token instead. Use a revive on this pkm.
+
+Fate Table - 
+:Basic 
+::Implemented Tokens - PokeCenter(9), Capture(6), Phoenix Down(3) 
+::Implemented Strikes - Release, Freeze, Push-Up
+::Implemented Fate Die - Basic
+
+Fate Dice -
+:Basic
+
+10 faces use any 1-10 randomizer
+
+1 - KYS, Crit 
+2 - CatchEm
+3 - SmellYaLater
+4 - Rez
+5 - Ice Beam
+6 - Strength
+7 - Cure
+8 - Helping Hand
+9 - Divination
+10 - Free Ride, Crit 
+
+Fate Rules -
+:Free Ride - gain 1 token of your choice.
+:CatchEm - gain 1 token Capture token
+:SmellYaLater - chose a player to gain a Release strike.
+:Rez - gain 1 Phoenix Down token.
+:Ice Beam - chose a player to gain a Freeze strike. 
+:Strength - chose a player to gain a PushUp strike. 
+:KYS - gain 1 implemented strike of your choice. chose a player to gain a reset strike.
+:Cure - gain 1 PokeCenter token
+:Helping Hand - choose a player other than yourself to gain a Capture token.
+:Divination - choose a player other than yourself to roll the fate die.
+:Crit- ReRoll fate die
