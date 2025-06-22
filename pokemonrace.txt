@@ -24,7 +24,7 @@ This also applies to strikes or any other mechanics that would restrict the play
 Cups -
 :Basic
 Finish line - The first player to enter into the hall of fame
-Rules - Themed Nickname, Rivals, Fated Rest, Fated Capture, Reaper, Progression
+Rules - Themed Nickname, Rivals, Fated Rest, Fated Capture, Reaper, Progression, RNJ, Fated XP
 Fate Table - Basic
 
 Rules -
@@ -36,11 +36,14 @@ Rules -
 	you must also proceed to the last pokemon center you viste.
 	When both players arrive they must battle.
 	Other cup rules do not apply when battling.
-	The winner receives a rivell token. rivle tokens act as any token.
+	The winner rolls d6 and receives that many rival tokens. rival tokens act as any token.
 :Fated Rest - when you use a pokecenter roll the fate die
 :Fated Captuer - when you use a pokecenter roll the fate die
+:Fated XP - when you defeat a pokemon in the wild roll a fate die
 :Reaper- when you pokemon faints you have to release it. revives are not usable with this rule active.
 :Progression - when you beat a gym roll a d6 gain implements tokens of rolled number. allocate how you like.
+:RNJ - You are limited to the number of pokemon you can defeat in any given route. 
+	When entering a route roll a d20 you may not defeat more then that number of pokemon.
 
 
 Strikes -
@@ -57,7 +60,7 @@ Tokens -
 Fate Table - 
 :Basic 
 ::Implemented Tokens - PokeCenter(9), Capture(6), Phoenix Down(3) 
-::Implemented Strikes - Release, Freeze, Push-Up
+::Implemented Strikes - Release, Freeze, Push-Up, Reset
 ::Implemented Fate Die - Basic
 
 Fate Dice -
